@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .img-thumbnail{
+            height: 477px;
+            width: 635px;
+            position: absolute;
+            left: 120px;
+            top: 200px;
+            border: none;
+        } 
+        
+
+        .container{
+            position: absolute;
+            left: 900px;
+            top: 200px;
+            height: 470px;
+            width: 400px;
+            /* border: solid black 5px; */
+            font-size: 30px;
+            line-height: 48px;
+            background-color: #0b040433;
+            padding-left: 20px;
+            border-radius: 8px;
+            padding-top: 12px;
+        }
+        .container input{
+            border-radius: 7px;
+            font-size: 22px;
+            width: 350px;
+            border: solid rgb(136, 126, 126) 1px;
+            font-style:normal ;
+            
+        }
+        .container label{
+          font-style: normal;
+          font-weight: 490;
+        }
+        .container button{
+            margin-top: 20px;
+            height: 50px;
+            width: 120px;
+            font-size: 25px;
+            margin-left: 115px;
+        }
+        .container h2{
+            margin-left: 100px;
+            font-size: 40px;
+            color: #1d5fe7;
+            font-style: initial;
+            font-weight: bold;
+        }
+        .container-fluid{
+          font-size: 20px;
+        }
+        .navbar-brand{
+          font-size: 40px;
+          margin-right: 40px;
+        }
+        
+        .container p{
+            font-size: 19px;
+            margin-top: -4px;
+        }
+        .forget{
+            font-size: 22px;
+            text-decoration: none;
+
+        }
+        hr{
+          border:1px solid rgba(255, 255, 255, 0.18) ;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+    </style>
+
+    <title>UrlEditor</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">UrlEditor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signin.html">Signin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fetching_url.html">Fetching_Url</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="urleditor.png" class="img-thumbnail" alt="sorry">
+    
+
+    <form action="http://127.0.0.1:8000/login/" method="post" class="container">
+        <h2>Login</h2>
+        <hr>
+        <label for="user">Username:</label>
+        <br>
+        <input id="user" type="text" name="username" required>
+        <br>
+        <label for="passw">Password:</label>
+        <br>
+        <input id="passw" type="password" required name="password">
+        <br>
+
+        
+        <button type="submit" class="btn btn-dark">Submit</button>
+        <br>
+        <a href="forget_password.html" class="forget">Forget Password?</a>
+        <p id="Create">Doesn't Have a Account?<a href="signin.html">Create One</a></p>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
